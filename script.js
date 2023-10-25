@@ -1,5 +1,5 @@
 // v1
-var operator = prompt("Masukkan operator (+, -, *, /, %, **, ++, --):");
+var operator = prompt("Masukkan operator (+, -, *, /, **, ++, --)");
 var angka1 = parseFloat(prompt("Masukkan angka pertama:"));
 var angka2 = parseFloat(prompt("Masukkan angka kedua:"));
 
@@ -19,16 +19,10 @@ if (operator === "+") {
     } else {
         hasil = "Pembagian dengan nol/null tidak valid";
     }
-} else if (operator === "%") {
-    if (angka2 !== 0) { 
-        hasil = angka1 % angka2;
-    } else {
-        hasil = "Modulus dengan nol/null tidak valid";
-    }
 } else if (operator === "**") {
     hasil = Math.pow(angka1, angka2);
 } else if (operator === "++") {
-    // Operasi increment
+    // increment
     hasil = angka1 + 1;
 } else if (operator === "--") {
     // decrement
